@@ -1,0 +1,56 @@
+﻿@model IEnumerable<PhoneDirectoryApplication.Models.Report>
+
+@{
+    ViewData["Title"] = "Report";
+}
+
+<h1>Report</h1>
+
+<p>
+    <a asp-action="CreateReport">Create a New Report</a>
+</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="main-box clearfix">
+                <div class="table-responsive">
+                    <table class="table user-list">
+                        <thead>
+                            <tr>
+                                <th class="text-center"><span>Report Date</span></th>
+                                <th class="text-center"><span>Status</span></th>
+                                <th class="text-center"><span>Location</span></th>
+                                <th class="text-center"><span>Number of People</span></th>
+                                <th class="text-center"><span>Number of Phone</span></th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.reportDate)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.status)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.location)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.numberOfPeople)
+                                </td>
+                                <td class="text-center">
+                                    @Html.DisplayFor(modelItem => item.numberOfPhone)
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
