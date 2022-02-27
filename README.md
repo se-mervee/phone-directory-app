@@ -1,4 +1,4 @@
-Proje veritabanı 'db_riseTechnology' -klasörü altında- restore edilir.
+Proje veritabanı -'db_riseTechnology' klasörü altında- restore edilir.
 Proje dosyaları içindeki PersonAPI.sln ile proje açılıp çalıştırılır.
 
 Solution içinde iki API(personAPI-> rehberdeki kişiler için, ReportService -> arkaplan servis), bir unit test projesi ve bir web projesi bulunmaktadır.
